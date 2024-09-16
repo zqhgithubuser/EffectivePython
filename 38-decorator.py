@@ -27,7 +27,8 @@ def fibonacci(n, depth=0):
     """Return the n-th Fibonacci number"""
     if n in (0, 1):
         return n
-    return fibonacci(n - 2, depth=depth + 1) + fibonacci(n - 1, depth=depth + 1)
+    return fibonacci(n - 2, depth=depth + 1) + fibonacci(n - 1,
+                                                         depth=depth + 1)
 
 
 fibonacci(4)
