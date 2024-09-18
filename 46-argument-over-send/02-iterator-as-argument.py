@@ -29,7 +29,7 @@ def complex_wave_cascading(amplitude_it):
 def run_cascading():
     amplitudes = [7, 7, 7, 2, 2, 2, 2, 10, 10, 10, 10, 10]
     it = complex_wave_cascading(iter(amplitudes))
-    for amplitude in amplitudes:
+    for i, _ in enumerate(amplitudes):
         output = next(it)
         transmit(output)
 
