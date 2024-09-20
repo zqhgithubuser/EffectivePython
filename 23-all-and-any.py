@@ -2,26 +2,26 @@ import random
 
 
 def flip_coin():
-  if random.randint(0, 1) == 0:
-    return "Heads"
-  else:
-    return "Tails"
+    if random.randint(0, 1) == 0:
+        return "Heads"
+    else:
+        return "Tails"
 
 
 def flip_is_heads():
-  return flip_coin() == "Heads"
+    return flip_coin() == "Heads"
 
 
 def flip_is_tails():
-  return flip_coin() == "Tails"
+    return flip_coin() == "Tails"
 
 
 # 循环
 all_heads = True
 for i in range(20):
-  if not flip_is_heads():
-    all_heads = False
-    break
+    if not flip_is_heads():
+        all_heads = False
+        break
 print(all_heads)
 
 # all: 一旦遇到False则返回False
