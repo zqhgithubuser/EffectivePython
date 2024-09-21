@@ -17,7 +17,7 @@ class Integer:
     def __init__(self, value):
         self.value = value
 
-
+# 向类添加方法，而无需修改类
 @my_evaluate.register(Integer)
 def _(node):
     return node.value
